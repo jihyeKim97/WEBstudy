@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <video id="vid" src="./media/trailer.mp4" muted autoplay="autoplay" controls>
+
+  </video>
+  <audio src="./media/trailer.mp4" autoplay=true controls>
+    이 웹브라우저는 mp4를 지원하지 않음
+  </audio>
+  <script type="text/javascript">
+    var video = document.getElementById(“vid”).play();
+    video.muted = false;
+    video.muted = true;
+    video.play();
+  </script>
+
+</body>
+
+</html>
