@@ -1,0 +1,24 @@
+table, td {
+  border: black solid 1px;
+  text-align: center;
+  width: 50% color: black;
+}
+
+th {
+  border: solid 1px white;
+  color: white;
+  background-color: green;
+}
+td{
+  text-align: center;
+  color: black;
+  height: 50px;
+
+}
+td#td-bottom{
+  vertical-align: bottom;
+}
+
+table {
+  border-collapse: collapse;
+}

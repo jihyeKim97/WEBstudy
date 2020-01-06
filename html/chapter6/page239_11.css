@@ -1,0 +1,20 @@
+div#div-square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  animation: 2s mymanim;
+  animation-iteration-count: 10;
+}
+
+@keyframes mymanim {
+  0% {left : 0px; top: 0px;}
+
+  25% {left : 500px; top: 0px;}
+
+  50% {left : 500px; top: 500px;}
+
+  75% {left : 0px; top: 500px;}
+
+  100% {left : 0px; top: 0px;}
+}

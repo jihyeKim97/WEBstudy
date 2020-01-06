@@ -1,0 +1,102 @@
+body {
+  width: 1240px;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p#bannername {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+UL#topmain {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+UL#topmain LI {
+  display: inline;
+  padding-left: 25px;
+  padding-right: 25px;
+  letter-spacing: 15px;
+  font-weight: bold;
+}
+
+ul#topmain>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+ul#topmain li a:hover {
+  text-decoration: none;
+  background-color: #ECF6CE;
+  transition: width 0.25s, height 0.25s, background-color 0.25s, transform 0.25s;
+}
+
+#aside1 {
+  text-decoration: none;
+  width: 15%;
+  height: 1000px;
+  float: left;
+  font-size: 18px;
+}
+ul#leftmain>li>a {
+  text-decoration: none;
+  color: black;
+    font-weight: bold;
+}
+#aside1 ul li a:hover {
+  text-decoration: none;
+  background-color: #ECF6CE;
+  display: block;
+  transition: width 0.25s, height 0.25s, background-color 0.25s, transform 0.25s;
+}
+
+#aside1>ul {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  padding: 0px;
+}
+
+#aside1 ul li {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+}
+
+#article {
+  width: 50%;
+  height: 1000px;
+  float: left;
+
+}
+
+#aside {
+  right: 8px;
+  list-style: none;
+  width: 25%;
+  height: 1000px;
+  float: right;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  clear: both;
+  background-color: #FFA374;
+}
+
+div#div {
+  width: auto;
+}
+
+#section {
+  width: 60%;
+  float: left;
+}

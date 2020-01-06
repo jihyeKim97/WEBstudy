@@ -1,0 +1,10 @@
+#transition {
+  width: 100px;
+  height: 50pa;
+  border: 1px solid black;
+  background-color: yellow;
+  transition: width 3s;
+}
+div:hover#transition{
+  width: 200px;
+}

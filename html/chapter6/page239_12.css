@@ -1,0 +1,9 @@
+p#abc1{
+  position: absolute;
+  color: red;
+}
+p#abc2{
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}

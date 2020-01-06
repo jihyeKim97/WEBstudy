@@ -1,0 +1,17 @@
+strong{
+  font-style: italic;
+}
+
+td.number{
+font-weight: bold;
+color: red;
+font-size: 40px;
+border-right:  2px solid gray;
+padding: 10px;
+}
+
+td.text{
+  color: blue;
+  font-size: 40px;
+  padding: 10px;
+}

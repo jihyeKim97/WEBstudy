@@ -1,0 +1,17 @@
+#a {
+  background-color: yellow;
+  width: 300px;
+  height: 120px;
+  position: relative;
+  left: 40px;
+  top: 25px;
+}
+
+#b {
+  background-color: blue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  bottom: 40px;
+  right: 30px;
+}

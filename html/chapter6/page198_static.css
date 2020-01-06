@@ -1,0 +1,33 @@
+p#p-block{
+  width:200px;
+  height: 50px;
+  background-color: cyan;
+}
+p#p-block2{
+  width:200px;
+  height: 50px;
+  background-color: cyan;
+}
+div#div-block3{
+  width:200px;
+  height: 50px;
+  background-color: cyan;
+}
+ul>li {
+  list-style-type: none;
+display: inline-block;
+font-weight: bold;
+font-size: 1.5em;
+letter-spacing: 5px;
+padding: 10px;
+width: 175px;
+height: 30px;
+border:1px solid black;
+text-align: center;
+background-color: #bcbcbc;
+margin-right: 5px;
+}
+ul>li:hover{
+  background-color:white;
+  color: #bcbc;
+}
