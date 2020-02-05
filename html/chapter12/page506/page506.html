@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h4>학생</h4>
+  <p style="background-color : yellow">
+    name : <span id="name"></span><br>
+    age : <span id="age"></span>
+  </p>
+  <script>
+    var s = '[' +
+      '{"name" : "Kim", "age" : "21"},' +
+      '{"name" : "Min", "age" : "26"},' +
+      '{"name" : "Park", "age" : "29"}]' ;
+      var students = JSON.parse(s);
+      students[1].name = "YAM";
+      document.getElementById("name").innerHTML = students[1].name;
+      document.getElementById("age").innerHTML = students[1].age;
+  </script>
+</body>
+
+</html>

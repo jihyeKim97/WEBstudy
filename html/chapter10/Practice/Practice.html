@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+</head>
+
+<body>
+  <h2>-----------ListItem alert 띄우기</h2>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+  </ul>
+  <script>
+    var list = document.getElementsByTagName('ul')[0];
+    var allitems = list.getElementsByTagName('li');
+    var length = allitems.length;
+    for (var i = 0; i < length; i++) {
+      alert(allitems[i].firstChild.data);
+    }
+  </script>
+  <br>
+  <br>
+  <br>
+  <h2>-----------changeImage 바꾸기</h2>
+  <img id="image" src="./image/a.png" width="120" height="100">
+  <script>
+    function changeImage() {
+      document.getElementById("image").src = "./image/b.png";
+    }
+  </script>
+  <input type="button" onclick="changeImage()" value="눌러보세요" />
+  <h2>-----------요소숨기기,표시하기</h2>
+  <h3 id="heading">이것은 해당입니다</h3>
+  <input type="button" value="요소숨김" onclick="document.getElementById('heading').style.visibility ='hidden'" />
+  <input type="button" value="요소표시" onclick="document.getElementById('heading').style.visibility ='visible'" />
+  <br>
+  <br>
+  <br>
+  <h2>-----------구글창 열기</h2>
+  <form>
+    <input type="button" value="구글창 열기" onclick="window.open('http://www.google.com','_blank','width = 300','height=300',true)" />
+  </form>
+  <br>
+  <br>
+  <br>
+  <h2>-----------전체화면 보기</h2>
+  <script>
+    function maxopen(url, winattributes) {
+      var maxwindow = window.open(url, "", winattributes)
+      maxwindow.moveTo(0, 0);
+      maxwindow.resizeTo(screen.availWidth, screen.availHeight)
+    }
+  </script>
+  <a href="#" onclick="maxopen('http://www.google.com','resize=1','status=1'); return false">전체화면 보기</a>
+  <br>
+  <br>
+  <br>
+  <h2>-----------이동하기</h2>
+  <script>
+    function replace() {
+      location.replace("http://www.google.com")
+    }
+  </script>
+  <a href="#" onclick="replace();">이동하기</a>
+  <br>
+  <br>
+  <br>
+
+</body>
+
+</html>

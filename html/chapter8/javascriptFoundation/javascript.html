@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+</head>
+
+<body>
+  <form action="index.html" method="post">
+    num1:<input type="number" id="num1" value="10" /><br />
+    num2:<input type="number" id="num2" value="10" /><br />
+    sum:<input type="number" id="sum" value="0" /><br />
+<input type="button" value="계산버튼"on>
+  </form>
+  <script type="text/javascript">
+
+  function clacument{
+    var num1 = document.getElementById("num1").value;
+     console.log(num1);
+     console.dir(num1.__proto__);
+     if(num1==="0"||num1===""||num2==="0"||num2===""){
+       alert("오랜만이다");
+       document.getElementById("num1").focus();
+       return false;
+     }
+     // document.write(num1);
+     var calc = parseInt(num1) + parseInt(num2);
+     document.getElementById("sum").value = calc;
+
+  }
+  </script>
+</body>
+
+</html>

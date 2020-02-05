@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+  <p id = "title">이것은 p요소 입니다</p>
+  <script>
+    $(document).ready(function() {
+      $("#hide").click(function() {
+        $("#title").hide();
+      });
+      $("#show").click(function() {
+        $("#title").show();
+      });
+    });
+
+  </script>
+  <button id="hide">감추기</button>
+  <button id="show">보이기</button>
+</body>
+
+</html>

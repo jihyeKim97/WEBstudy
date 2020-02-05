@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#buttonleft").click(function() {
+        $("#imagesmile").animate({left: '50px'});
+      });
+      $("#buttonright").click(function() {
+        $("#imagesmile").animate({left : '-100px'});
+      });
+    });
+  </script>
+  <button id="buttonright"><<</button>
+  <button id="buttonleft">>></button>
+  <img src="smile.png" id="imagesmile" style="position : relative">
+</body>
+
+</html>

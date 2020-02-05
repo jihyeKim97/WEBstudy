@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="practice_exercise.js"></script>
+</head>
+
+<body>
+  <h2>------예제) form_reg_exp.html</h2>
+  <pre>
+  전화번호 (-없이 입력):   <input type="text" size="20" id="telephonenumber"> <button type="button" onclick="example1(document.getElementById('telephonenumber'),'숫자만 입력 하세요');">확인</button>
+  </pre>
+
+  <h2>------예제) form_reg_exp1.html</h2>
+<form >
+  과일선택 : <select id="fruits" class="required">
+    <option value="0">선택하세요</option>
+    <option value="1">포도</option>
+    <option value="2">자몽</option>
+    <option value="3">배</option>
+    <option value="4">스타후르츠</option>
+    <option value="5">두리안</option>
+  </select>
+  <button type="button" onclick="example2(document.getElementById('fruits'),'하나를 선택 해야 합니다');">확인</button>
+</form>
+
+
+
+  <h2>------대화상자</h2>
+  <p>자바 스크립트는 이벤트에 반응할수 있습니다.</p>
+  <button type="button" onclick="example5();">Q.5</button>
+
+  <h2>------내용조작</h2>
+  <p id="textareaclick">버튼을 누르면 이 요소의 내용이 변경됩니다.</p>
+  <button type="button" onclick="example6();">Q.6</button>
+
+  <h2>------올바른 값 검사</h2>
+  <p>숫자를 입력 하세요.</p>
+  <input type="text" size="10" id="numbertext">
+  <button type="button" onclick="example7(document.getElementById('numbertext'),'숫자가 아닙니다!')">Q.7</button>
+
+  <h2>------동적변경</h2>
+  <p>스위치를 클릭해 보세요.</p>
+  <img id="image" src="./image/red.png" onclick="example8();">
+
+  <h2>------회원 신청서</h2>
+  <form>
+    <pre>
+    이름*                <input id = "name" type="text" size="30" > <button type="button" onclick="checkNotEmpty(document.getElementById('name'))">확인</button>
+    <!--  -->
+    성별*                <input type="radio" name = "text" value="남자">남자 <input type="radio" name = "text" value="여자">여자
+
+    휴대폰번호 Phone*    <input id="phonenumber"type="text" size="30" > <button type="button" onclick="phonenumbercheck(document.getElementById('phonenumber'))">확인</button>
+
+    이메일*              <input id = "email" type="text" size="30"> <button type="button" onclick="emailcheck(document.getElementById('email'))">확인</button>
+
+    패스워드(6~8글자)*   <input id = "password" type="password" size="30" >
+
+    패스워드 검증*       <input id = "passwordcheck"  type="password" size="30"> <button type="button" onclick="passwordcheckcheck(document.getElementById('passwordcheck'))">확인</button>
+                         <p  id = "checkmessage" style="color : red; display : inline-block;"></p>
+                         <button type="button" >제출</button>  <button type="button"> 지우기</button>
+    </pre>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="Singup.js">
+
+  </script>
+</head>
+
+<body>
+  <h3>회원가입</h3>
+  <form>
+    이름(6-8 문자): <input type='text' id='name' />
+    <input type='button' onclick="checkLength(document.getElementById('name'), 6, 8)" value='확인' />
+    주소: <input type='text' id='addr' /><br />
+    생일: <input type='date' id='birthday' /><br />
+    아이디(6-8 문자):
+    <input type='text' id='username' /><br />
+    이메일: <input type='email' id='email' /><br />
+    휴대폰: <input type='tel' id='phone' /><br />
+    <input type='submit' value='확인' /><br />
+  </form>
+
+
+</body>
+
+</html>

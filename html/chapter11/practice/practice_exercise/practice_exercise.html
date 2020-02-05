@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="practice_exercise.js"></script>
+</head>
+
+<body>
+  <h2>------잘못된부분찾기</h2>
+  <canvas id="mycanvas" width="300" height="300" style="border: 3px solid yellow;"></canvas>
+  <script>
+    var canvas = document.getElementById("mycanvas");
+    var context = canvas.getContext("2d");
+    context.fillStyle = "#bcbcbc";
+    context.fillRect(50, 50, 100, 200);
+  </script>
+  <h2>------꺽선그리기</h2>
+  <canvas id="myCanvas" width="900" height="150"></canvas>
+  <script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    context.beginPath();
+    context.moveTo(0, 0);
+    context.lineTo(100, 100);
+    context.lineTo(200, 0);
+    context.lineTo(300, 100);
+    context.lineTo(400, 0);
+    context.lineTo(500, 100);
+    context.stroke();
+  </script>
+  <h2>------이미지그리기</h2>
+  <canvas id="imageCanvas" width="300" height="130"></canvas>
+  <script>
+    var canvas = document.getElementById('imageCanvas');
+    var context = canvas.getContext('2d');
+    var image = new Image();
+    image.src = "./image/aaaa.png";
+    image.onload = function(){
+      context.drawImage(image,0,0);
+    }
+  </script>
+</body>
+
+</html>
